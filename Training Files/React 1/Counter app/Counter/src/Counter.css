@@ -1,0 +1,29 @@
+.counter {
+  background: #f0f4f8;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.count-display {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: #0056b3;
+}

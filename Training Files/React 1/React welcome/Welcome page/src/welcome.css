@@ -1,0 +1,48 @@
+body {
+  background-color: #202020;
+  font-family: Arial, sans-serif;
+}
+
+.welcome-container {
+  margin-left: 50px;
+  margin-top: 50px;
+
+}
+
+.welcome-container h1 {
+  font-size: 54px;
+  color: #cacaca;
+}
+
+.welcome-container p {
+  font-size: 24px;
+  color: #7a7979;
+}
+
+button {
+  background-color: #3379c4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2a5f9e;
+}
+
+ul {
+  color: #7a7979;
+  padding: 0 25px;
+  padding-bottom: 2px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  color: #3379c4;
+  text-decoration: none;
+}

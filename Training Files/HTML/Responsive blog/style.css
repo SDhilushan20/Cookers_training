@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 10px 20px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.content {
+  padding: 20px;
+}
+
+.blog-post {
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  margin-top: 20px;
+  border-left: 4px solid #333;
+  border-radius: 4px;
+}
+
+.blog-post h2 {
+  margin-bottom: 8px;
+}
+
+.blog-post p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.blog-post a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
+/* Flex container for 2-column layout */
+.layout {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* Main blog content (left column) */
+.content {
+  flex: 2;
+  min-width: 300px;
+}
+
+/* Sidebar (right column) */
+.sidebar {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 113px;
+}
+
+/* Sidebar links */
+.sidebar h3 {
+  margin-top: 0;
+}
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+.sidebar ul li {
+  margin-bottom: 8px;
+}
+.sidebar ul li a {
+  color: #007BFF;
+  text-decoration: none;
+}
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Blog post styling */
+.blog-post {
+  background-color: #f1f1f1;
+  padding: 15px;
+  margin-top: 20px;
+  border-left: 4px solid #333;
+  border-radius: 5px;
+}
+.blog-post h2 {
+  margin-bottom: 8px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    margin-top: 20px;
+  }
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    background-color: #222;
+    transition: left 0.3s ease;
+  }
+
+  .nav-links.show {
+    left: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
