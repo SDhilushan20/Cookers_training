@@ -1,0 +1,29 @@
+.timer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ffffff, #e6e6e6);
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 320px;
+  margin: 3rem auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.timer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.timer p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: red;
+  margin: 0;
+}
+
+.timer:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
