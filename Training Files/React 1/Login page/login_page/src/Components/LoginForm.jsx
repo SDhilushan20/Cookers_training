@@ -16,7 +16,7 @@ function LoginForm({ onLogin }) {
   };
 
   return (
-    <form className="login-form" onSubmit={handleSubmit}>
+    <form className="login-form" onReset={() => { setUsername(""); setPassword(""); }} onSubmit={handleSubmit}>
       <h2>Login</h2>
       <input
         type="text"
@@ -31,6 +31,7 @@ function LoginForm({ onLogin }) {
         onChange={(e) => setPassword(e.target.value)}
       />
       <button type="submit">Login</button>
+      <button type="reset">Reset</button>
     </form>
   );
 }
