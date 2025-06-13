@@ -1,0 +1,114 @@
+/* CounterApp.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0e7ff, #ffffff);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  max-width: 400px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  color: #4f46e5;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.input-group input {
+  width: 80px;
+  padding: 0.4rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.count-display {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #1f2937;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.button-group button {
+  flex: 1;
+  margin: 0 0.3rem;
+  padding: 0.6rem 1rem;
+  font-size: 1.2rem;
+  background-color: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button-group button:hover {
+  background-color: #4f46e5;
+}
+
+.button-group button:disabled {
+  background-color: #d1d5db;
+  cursor: not-allowed;
+}
+
+.history {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.history h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.history ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  color: #4b5563;
+}
+
+.no-history {
+  color: #9ca3af;
+  font-style: italic;
+  font-size: 0.9rem;
+}
